@@ -1,20 +1,17 @@
 import React from "react";
-
-import Product from "../Product/Product";
+import Products from "../Products/Products";
 import Card from "../UI/Card/Card";
 import classes from "./Home.module.css";
+import initialState from "../../initialState";
 
-const addProductHandler = (props) =>  {
-  console.log(props)
-}
 
-const Home = (props) => {
+const Home = () => {
   return (
     <React.Fragment>
       <Card className={classes.home}>
         <h1>Portal St</h1>
       </Card>
-      <Product addProduct={addProductHandler} />
+      <Products products={initialState.product} />
     </React.Fragment>
   );
 };

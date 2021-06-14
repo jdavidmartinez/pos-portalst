@@ -1,0 +1,59 @@
+export default {
+    cart: [],
+    product: [
+        {
+            id: "1",
+            title: "Portal",
+            Cathergory: "Burguer",
+            price: 10000,
+            description: "Hamburguesa Portal, tradicional",
+            Number: "01",
+            offerImage: "./img/offers/offer-01.jpg",
+        },
+        {
+            id: "2",
+            title: "Portazo",
+            Cathergory: "Burguer",
+            price: "117500",
+            description: "Hamburguesa Portaz0, doble carne",
+            Number: "02",
+            offerImage: "./img/offers/offer-01.jpg",
+        },
+        {
+            id: "3",
+            title: "Ranchera",
+            Cathergory: "Burguer",
+            price: 117500,
+            description: "Hamburguesa Portaz0, doble carne",
+            Number: "02",
+            offerImage: "./img/offers/offer-01.jpg",
+        },
+        {
+            id: "4",
+            title: "Queso",
+            Cathergory: "Burguer",
+            price: 117500,
+            description: "Hamburguesa Portaz0, doble carne",
+            Number: "02",
+            offerImage: "./img/offers/offer-01.jpg",
+        },
+        {
+            id: "5",
+            title: "Pollo",
+            Cathergory: "Burguer",
+            price: 117500,
+            description: "Hamburguesa Portaz0, doble carne",
+            Number: "02",
+            offerImage: "./img/offers/offer-01.jpg",
+        },
+        {
+            id: "6",
+            title: "Junior",
+            Cathergory: "Burguer",
+            price: 117500,
+            description: "Hamburguesa Portaz0, doble carne",
+            Number: "02",
+            offerImage: "./img/offers/offer-01.jpg",
+        }
+    ]
+}
