@@ -1,21 +1,22 @@
 import React, {useContext} from 'react';
 import AppContext from '../../context/AppContext';
+import Product from '../Product/Product';
 
-function Product() {
+function Products() {
     const {state, addToCart} = useContext(AppContext);
     const {product} = state;
 
-    const handleAddToCart = product => () => {
-        addToCart(product)
-      }
+    const handleAddToCart = products => {
+        addToCart(products)
+    }
     
     return (
         <>
-            {product.map((product) => (
-            <Product key={product.id} product={product} handleAddToCart={handleAddToCart} />
+            {product.map((products) => (
+            <Product key={products.id} product={products} handleAddToCart={handleAddToCart} />
             ))}
         </>
     )
 }
 
-export default Product
+export default Products
