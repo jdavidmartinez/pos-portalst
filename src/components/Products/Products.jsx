@@ -6,14 +6,14 @@ function Products() {
     const {state, addToCart} = useContext(AppContext);
     const {product} = state;
 
-    const handleAddToCart = products => {
-        addToCart(products)
+    const handleAddToCart = product => {
+        addToCart(product)
     }
     
     return (
         <>
             {product.map((products) => (
-            <Product key={products.id} product={products} handleAddToCart={handleAddToCart} />
+                <Product key={products.id} product={products} handleAddToCart={ () => handleAddToCart(products)} />
             ))}
         </>
     )

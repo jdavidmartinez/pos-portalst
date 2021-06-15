@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../UI/Card/Card";
-import Button from '../UI/Button/Button'
-import classes from '../Home/Home.module.css'
+import Button from '../UI/Button/Button';
+import classes from '../Home/Home.module.css';
 
 const Product = ({ product, handleAddToCart }) => {
   return (
